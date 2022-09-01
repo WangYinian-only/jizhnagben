@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消费项目"
+        android:textColor="#8BC34A"
+        android:textSize="30sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_cost_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="：可以不填写"
+        android:textColor="#0C0A07"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消费金额"
+        android:textColor="#C34A4A"
+        android:textSize="30sp">  </TextView>
+
+    <EditText
+        android:id="@+id/et_cost_money"
+        android:inputType="number|numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textSize="30sp"
+        android:hint="：具体数额，填写数字"
+        android:textColor="#161012"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消费日期"
+        android:textColor="#03A9F4"
+        android:textSize="30sp">  </TextView>
+    <DatePicker
+        android:id="@+id/dp_cost_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        />
+
+    <Button
+        android:onClick="okButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_btn4"
+        android:layout_below="@+id/btn_3"
+        android:layout_marginTop="10dp"
+        android:text="确认"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+</LinearLayout>
